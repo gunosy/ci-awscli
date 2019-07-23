@@ -11,4 +11,4 @@ RUN apk --update --no-cache add \
     pip \
     setuptools \
     awscli \
-    && rm -r /root/.cache
+    && rm -rf /root/.cache
