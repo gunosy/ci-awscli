@@ -12,3 +12,5 @@ RUN apk --update --no-cache add \
     setuptools \
     awscli \
     && rm -rf /root/.cache
+COPY entrypoint.sh .
+ENTRYPOINT ["./entrypoint.sh"]
